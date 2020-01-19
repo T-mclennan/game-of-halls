@@ -121,6 +121,18 @@ a {
   height: 3rem;
 }
 
+.about {
+  padding: 0 2rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+}
+
+.about h2 {
+  margin: 0.5rem;
+}
+
 .gameDetails {
   width: 100%;
   display: flex;

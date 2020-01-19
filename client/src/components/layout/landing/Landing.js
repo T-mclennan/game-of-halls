@@ -5,24 +5,32 @@ import { Link } from "react-router-dom";
 import "../../../App.css";
 
 export class Landing extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+  }
+
+  componentDidMount() {}
+
   render() {
     return (
       <div className="landing">
         <div className="gameDetails">
-          <Link to="/">
+          <Link to="/about">
             <h3>The UC Davis energy efficiency tracker game.</h3>
           </Link>
-          <h3>First Place: Building 1!</h3>
+          <h3>First Place: Kemper Hall</h3>
         </div>
         <Card body className="dataCard" style={cardStyle}>
           <Chart
-            style={{ marginLeft: "5rem" }}
+            // style={{ marginRight: "5rem" }}
             width={"45rem"}
             height={"20rem"}
             chartType="AreaChart"
             loader={<div>Loading Chart</div>}
             data={[
-              ["Week", "Building1", "Building2", "Building3"],
+              ["Week", "Kemper Hall", "Wellmen Hall", "Young Hall"],
               ["12/21", 1000, 400, 500],
               ["12/28", 1170, 700, 600],
               ["01/05", 660, 1120, 1200],
@@ -40,9 +48,15 @@ export class Landing extends Component {
             rootProps={{ "data-testid": "1" }}
           />
           <div className="buildingLinks">
-            <Link to="/building1">Building 1</Link>
-            <Link to="/building1">Building 2</Link>
-            <Link to="/building1">Building 3</Link>
+            <Link className="link1" to="/Kemper">
+              Kemper Hall
+            </Link>
+            <Link className="link2" to="/Wellmen">
+              Wellmen Hall
+            </Link>
+            <Link className="link3" to="/Young">
+              Young Hall
+            </Link>
           </div>
         </Card>
       </div>
@@ -53,11 +67,12 @@ export class Landing extends Component {
 const cardStyle = {
   float: "none",
   // marginTop: "2.5rem",
+  // marginLeft: "0px",
   width: "50rem",
   boxShadow: "0 19px 18px",
   justifyContent: "center",
   fontSize: "1.3rem",
-  // padding: "2rem",
+  padding: "2rem",
   marginBottom: "10rem"
 };
 

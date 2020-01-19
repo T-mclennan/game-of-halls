@@ -7,7 +7,7 @@ export class Building extends Component {
     return (
       <Container>
         <div className="title">
-          <h1>Building 1:</h1>
+          <h1>Young Hall:</h1>
         </div>
         <div className="details">
           <h3>Status: 3rd place</h3>

@@ -5,7 +5,9 @@ import { Provider } from "react-redux";
 import store from "./store";
 import history from "../src/history";
 import Landing from "./components/layout/landing/Landing";
-import Building from "./components/layout/building/Building";
+import Kemper from "./components/layout/building/Kemper";
+import Young from "./components/layout/building/Young";
+import Wellmen from "./components/layout/building/Wellmen";
 import InputForm from "./components/layout/input/InputForm";
 import About from "./pages/About";
 import Contributions from "./pages/Contributions";
@@ -22,7 +24,9 @@ class App extends Component {
               <Route exact path="/" component={Landing} />
               <Route exact path="/input" component={InputForm} />
               <Route exact path="/about" component={About} />
-              <Route exact path="/building1" component={Building} />
+              <Route exact path="/Kemper" component={Kemper} />
+              <Route exact path="/Young" component={Young} />
+              <Route exact path="/Wellmen" component={Wellmen} />
               <Route exact path="/contributions" component={Contributions} />
             </div>
           </div>
