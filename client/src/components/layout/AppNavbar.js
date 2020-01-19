@@ -6,7 +6,7 @@ class AppNavbar extends Component {
   render() {
     return (
       <div className="navBar">
-        <Link to="/">
+        <Link style={{ textDecoration: "none" }} to="/">
           <h1 className="navTitle">Game Of Halls</h1>
         </Link>
       </div>

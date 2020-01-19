@@ -8,6 +8,10 @@ export class Landing extends Component {
   render() {
     return (
       <div className="landing">
+        <div className="gameDetails">
+          <h3>The UC Davis energy efficiency tracker game.</h3>
+          <h3>First Place: Building 1!</h3>
+        </div>
         <Card body className="dataCard" style={cardStyle}>
           <Chart
             width={"45rem"}
@@ -45,7 +49,7 @@ export class Landing extends Component {
 
 const cardStyle = {
   float: "none",
-  marginTop: "2.5rem",
+  // marginTop: "2.5rem",
   width: "50rem",
   boxShadow: "0 19px 18px",
   justifyContent: "center",
