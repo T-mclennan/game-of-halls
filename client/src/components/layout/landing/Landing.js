@@ -9,12 +9,14 @@ export class Landing extends Component {
     return (
       <div className="landing">
         <div className="gameDetails">
-          <h3>The UC Davis energy efficiency tracker game.</h3>
+          <Link to="/">
+            <h3>The UC Davis energy efficiency tracker game.</h3>
+          </Link>
           <h3>First Place: Building 1!</h3>
         </div>
         <Card body className="dataCard" style={cardStyle}>
           <Chart
-            style={{ marginLeft: "10rem" }}
+            style={{ marginLeft: "5rem" }}
             width={"45rem"}
             height={"20rem"}
             chartType="AreaChart"
@@ -55,7 +57,7 @@ const cardStyle = {
   boxShadow: "0 19px 18px",
   justifyContent: "center",
   fontSize: "1.3rem",
-  padding: "2rem",
+  // padding: "2rem",
   marginBottom: "10rem"
 };
 
