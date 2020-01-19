@@ -94,4 +94,17 @@ a {
 }
 
 .dataCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.buildingLinks {
+  margin-top: 1rem !important;
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }

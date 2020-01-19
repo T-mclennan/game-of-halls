@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import "../../App.css";
+import { Link } from "react-router-dom";
 
 class AppNavbar extends Component {
   render() {
     return (
       <div className="navBar">
-        <h1 className="navTitle">Game Of Halls</h1>
+        <Link to="/">
+          <h1 className="navTitle">Game Of Halls</h1>
+        </Link>
       </div>
     );
   }
