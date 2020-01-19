@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Card } from "reactstrap";
 import Chart from "react-google-charts";
 import { Link } from "react-router-dom";
+import axios from "axios";
 import "../../../App.css";
 
 export class Landing extends Component {
@@ -11,7 +12,9 @@ export class Landing extends Component {
     this.state = {};
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    //WOULD AXIOS.GET('./api/buildings/getData) to populate building data in chart
+  }
 
   render() {
     return (

@@ -8,6 +8,10 @@ const server = http.createServer(app);
 // Bodyparser Middleware
 app.use(express.json());
 
+//routes:
+app.use("/api/buildings", require("./routes/api/buildings"));
+app.use("/api/input", require("./routes/api/input"));
+
 const port = process.env.PORT || 5000;
 
 // Serve static assets if in production

@@ -3,6 +3,13 @@ import { Container } from "reactstrap";
 import { Link } from "react-router-dom";
 
 export class Building extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      //We would pass the specific data in as a prop from the parent 'Landing.js' component
+    };
+  }
   render() {
     return (
       <Container>

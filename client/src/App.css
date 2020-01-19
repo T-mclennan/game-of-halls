@@ -133,6 +133,9 @@ a {
   margin: 0.5rem;
 }
 
+.card div {
+  margin: 0px !important;
+}
 .gameDetails {
   width: 100%;
   display: flex;
