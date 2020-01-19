@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Amarante&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  line-height: 1.4;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: #333;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  padding: 0 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.display {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100%;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: #555;
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #666;
+}
+
+.centered {
+  height: 100h;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.navBar {
+  text-align: "center";
+  padding: "1rem 1.6rem";
+  background: "#152331";
+  background: "linear-gradient(45deg, #000000, #152331)";
+}
+
+.navTitle {
   color: white;
+  text-align: center;
+  font-family: "Amarante", cursive;
+  padding: 1rem;
+  background: #848484;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(223.88deg, #848484 8.89%, #000000 94.31%);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(223.88deg, #848484 8.89%, #000000 94.31%);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-bottom: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #bbbbb8;
+}
+
+.dataCard {
 }
