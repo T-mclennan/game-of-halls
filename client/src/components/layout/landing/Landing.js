@@ -14,6 +14,7 @@ export class Landing extends Component {
         </div>
         <Card body className="dataCard" style={cardStyle}>
           <Chart
+            style={{ marginLeft: "10rem" }}
             width={"45rem"}
             height={"20rem"}
             chartType="AreaChart"

@@ -15,7 +15,7 @@ export class Building extends Component {
           <h3>Projected energy usage: 1,240</h3>
           <h3>Current energy usage: 1,440</h3>
           <h3>This building could use improvement</h3>
-          <Link style={{ margin: "2rem" }} to="/input">
+          <Link style={{ margin: "2rem" }} to="/contributions">
             <h3>See how you can help the team</h3>
           </Link>
 
